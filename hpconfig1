@@ -1,37 +1,37 @@
 [RoutingRule]
-端口，17500，拒绝
+PORT,17500,REJECT
 
-域后缀，DL.listdl.com，拒绝
-域后缀，米.4399.CN，拒绝
+DOMAIN-SUFFIX,dl.listdl.com,REJECT
+DOMAIN-SUFFIX,m.4399.cn,REJECT
 
-IP-CIDR，0.0.0.0/24，拒绝
+IP-CIDR,0.0.0.0/24,REJECT
 
-域-关键字，QQ，拒绝
+DOMAIN-KEYWORD,qq,REJECT
 
-最终，直接
+FINAL,DIRECT
 [RoutingDomainStrategy]
-ASIS
+AsIs
 
 [FreedomDomainStrategy]
-ASIS
+AsIs
 
 [LocalPolicy]
-BufferSize=4096
-connIdle=300
-downlinkOnly=0
-握手=4
-uplinkOnly=0
+bufferSize = 4096
+connIdle = 300
+downlinkOnly = 0
+handshake = 4
+uplinkOnly = 0
 
-[DNSServer]
+[DnsServer]
 114.114.114.114
 [DnsRule]
 
-[DNSHOST]
+[DnsHost]
 
 [DnsClientIp]
 
-[日志]
-loglevel=无
+[Log]
+loglevel = none
 
 [PerAppVpn]
 
