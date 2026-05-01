@@ -1,0 +1,66 @@
+[RoutingRule]
+PORT,17500,DIRECT
+PORT,443,REJECT
+PORT,80,REJECT
+
+DOMAIN,android-v1.perfsight.qq.com,REJECT
+DOMAIN,android.crashsight.qq.com,REJECT
+DOMAIN,cloudctrl.gcloud.qq.com,REJECT
+DOMAIN,down.anticheatexpert.com,REJECT
+DOMAIN,faascjm.native.qq.com,REJECT
+DOMAIN,gpcloud.tgpa.qq.com,REJECT
+DOMAIN,guid.tpns.sh.tencent.com,REJECT
+DOMAIN,hc3.tdm.qq.com,REJECT
+DOMAIN,hpjy-op.tga.qq.com,REJECT
+DOMAIN,idcconfig.gcloudsdk.com,REJECT
+DOMAIN,ops.gp.qq.com,REJECT
+DOMAIN,pop-release.itop.qq.com,REJECT
+DOMAIN,receiver.tdm.qq.com,REJECT
+
+DOMAIN,sqlobby.pg.qq.com,REJECT
+
+DOMAIN,guid.payba.cn,REJECT
+DOMAIN,log.tpns.sh.tencent.com,REJECT
+DOMAIN,stat.tpns.sh.tencent.com,REJECT
+DOMAIN,default.tdatamaster.com,REJECT
+DOMAIN,hc2.tdm.qq.com,REJECT
+DOMAIN,hc.tdm.qq.com,REJECT
+DOMAIN,htest.tdm.qq.com,REJECT
+DOMAIN,download.ftnqq.com,REJECT
+
+DOMAIN-KEYWORD,anticheatexpert,REJECT
+DOMAIN-KEYWORD,id,REJECT
+DOMAIN-KEYWORD,api,REJECT
+
+FINAL,DIRECT
+[RoutingDomainStrategy]
+AsIs
+
+[FreedomDomainStrategy]
+AsIs
+
+[LocalPolicy]
+bufferSize = 4096
+connIdle = 300
+downlinkOnly = 0
+handshake = 4
+uplinkOnly = 0
+
+[DnsServer]
+114.114.114.114
+[DnsRule]
+
+[DnsHost]
+
+[DnsClientIp]
+
+[Log]
+loglevel = none
+
+[PerAppVpn]
+
+[PerAppMode]
+
+[PerAppAllow]
+
+[PerAppDisallow]
